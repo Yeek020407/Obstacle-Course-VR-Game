@@ -8,6 +8,8 @@ TagManager:
   - Teleport
   - Climbable
   - Ground
+  - Wall
+  - LastClimbable
   layers:
   - Default
   - TransparentFX

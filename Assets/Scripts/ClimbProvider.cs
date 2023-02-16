@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Unity.XR.CoreUtils;
 
 public class ClimbProvider : MonoBehaviour
 {
@@ -16,10 +17,18 @@ public class ClimbProvider : MonoBehaviour
     private bool _rightActive = false;
     private bool _leftActive = false;
 
+
     private void Start()
     {
         XRDirectClimbInteractor.ClimbHandActivated += HandActivated;
         XRDirectClimbInteractor.ClimbHandDeactivated += HandDeactivated;
+
+        GameObject varGameObject = GameObject.Find("XR Origin"); 
+        CharacterController m_CharacterController = varGameObject.GetComponent<CharacterController>();
+        Vector3 center = new Vector3 (0,0,0);
+        m_CharacterController.center = center;
+        Debug.LogError("pass");
+
     }
 
     private void OnDestroy()

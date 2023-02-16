@@ -26,14 +26,14 @@ public class XRDirectClimbInteractor : XRDirectInteractor
     {
         base.OnSelectEntered(args);
 
-        if(args.interactableObject.transform.gameObject.tag == "Climbable")
+        if(args.interactableObject.transform.gameObject.tag == "Climbable" || args.interactableObject.transform.gameObject.tag == "LastClimbable")
         {
             ClimbHandActivated?.Invoke(_controllerName);
             GameObject varGameObject = GameObject.Find("XR Origin");   
             varGameObject.GetComponent<Jump>().enabled = false;
         }
 
-        else if(args.interactableObject.transform.gameObject.tag == "Finish"){
+        else if(args.interactableObject.transform.gameObject.tag == "LastClimbable"){
             GameObject varGameObject = GameObject.Find("XR Origin");   
             varGameObject.GetComponent<Jump>().enabled = true;
         }
