@@ -24,47 +24,58 @@ public class ClosingWallLeft : MonoBehaviour
 	}
 
     // Update is called once per frame
-    void OnTriggerStay()
-    {
-		if (horizontal)
-		{
-			if (isForward)
+    void OnTriggerStay(Collider col)
+    {	
+		if(col.tag == "Player"){
+
+			if (horizontal)
 			{
-				if (closingWall2.transform.position.x < startPos.x + distance)
+				if (isForward)
 				{
-					closingWall2.transform.position += Vector3.left * Time.deltaTime * speed;
+					if (closingWall2.transform.position.x < startPos.x + distance)
+					{
+						closingWall2.transform.position += Vector3.left * Time.deltaTime * speed;
+					}
+					else
+						isForward = false;
 				}
 				else
-					isForward = false;
-			}
-			else
-			{
-				if (closingWall2.transform.position.x > startPos.x)
 				{
-					closingWall2.transform.position -= Vector3.left * Time.deltaTime * speed;
-				}
-				else
-					isForward = true;
-			}
-		}
-		else
-		{
-			if (isForward)
-			{
-				if (closingWall2.transform.position.z > startPos.z - distance)
-				{
-					closingWall2.transform.position -= Vector3.forward * Time.deltaTime * speed;
+					if (closingWall2.transform.position.x > startPos.x)
+					{
+						closingWall2.transform.position -= Vector3.left * Time.deltaTime * speed;
+					}
+					else
+						isForward = true;
 				}
 			}
 			else
 			{
-				if (closingWall2.transform.position.z < startPos.z)
+				if (isForward)
 				{
-					closingWall2.transform.position += Vector3.forward * Time.deltaTime * speed;
+					if (closingWall2.transform.position.z > startPos.z - distance)
+					{
+						closingWall2.transform.position -= Vector3.forward * Time.deltaTime * speed;
+					}
 				}
 				else
-					isForward = true;
+				{
+					if (closingWall2.transform.position.z < startPos.z)
+					{
+						closingWall2.transform.position += Vector3.forward * Time.deltaTime * speed;
+					}
+					else
+						isForward = true;
+				}
 			}
 		}
     }
+
+	void OnTriggerExit(Collider col){
+		if(col.tag=="Player"){
+
+			transform.position = startPos;
+		}
+	}
+	
 }
