@@ -279,6 +279,9 @@
  <Reference Include="log4netPlastic">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
+ <Reference Include="Valve.Newtonsoft.Json">
+ <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -654,6 +657,9 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.XR.OpenVR">
+ <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.XR.OpenVR.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -714,6 +720,9 @@
  <Reference Include="Unity.PlasticSCM.Editor">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.XR.OpenVR.Editor">
+ <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.XR.OpenVR.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.XR.CoreUtils.Editor">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.XR.CoreUtils.Editor.dll</HintPath>
  </Reference>
@@ -770,6 +779,26 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{4DD534C0-AF5D-A9A4-9253-EBD40B0078EC}</Project>
       <Name>Assembly-CSharp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{53202F9E-4E75-7682-684D-547928DEE382}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{6874E6E6-3C2D-40BE-1AA3-8E884EB10FD1}</Project>
+      <Name>SteamVR</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
+      <Project>{A8C576E9-6082-97C3-604E-23AD33AB109D}</Project>
+      <Name>SteamVR_Windows_EditorHelper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{84DD2E17-1C9C-05C7-6D36-01DC8B9F5B4E}</Project>
+      <Name>SteamVR_Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

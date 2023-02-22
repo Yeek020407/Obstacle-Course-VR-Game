@@ -49,6 +49,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Random Useful Scripts\CharacterControllerHMDUpdater.cs" />
      <Compile Include="Assets\Scripts\Hand.cs" />
+     <Compile Include="Assets\Scripts\OpeningWallRight.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Controller\CharacterControls.cs" />
      <Compile Include="Assets\Assets playground\Scripts\CameraCollision.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Controller\CameraManager.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\Assets playground\Scripts\AIZombie.cs" />
      <Compile Include="Assets\Assets playground\KnockerHammer2.cs" />
      <Compile Include="Assets\Assets playground\Supercyan Character Pack Zombie Sample\Scripts\ZombieFree.cs" />
+     <Compile Include="Assets\Falling.cs" />
      <Compile Include="Assets\Scripts\12 Swapping Teleportation and Continuous Movement\TeleportationControllerFixed.cs" />
      <Compile Include="Assets\Scripts\TeleportationController.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\FallPlat.cs" />
@@ -66,6 +68,7 @@
      <Compile Include="Assets\Assets playground\Supercyan Character Pack Zombie Sample\Scripts\ZombieCameraLogic.cs" />
      <Compile Include="Assets\Assets playground\Supercyan Character Pack Zombie Sample\Scripts\ZombieCharacterControl.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\MovableObsLeft.cs" />
+     <Compile Include="Assets\congrats.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\KillZone.cs" />
      <Compile Include="Assets\Assets playground\Scripts\TriggerZombie.cs" />
      <Compile Include="Assets\Assets playground\Scripts\CollectRed.cs" />
@@ -75,12 +78,14 @@
      <Compile Include="Assets\Scripts\11 Wrist UI\WristUI.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\WallMovable.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\ClosingWallLeft.cs" />
+     <Compile Include="Assets\Scripts\OpeningWallLeft.cs" />
      <Compile Include="Assets\Scripts\12 Swapping Teleportation and Continuous Movement\LocomotionManager.cs" />
      <Compile Include="Assets\Assets playground\Scripts\DemoFree.cs" />
      <Compile Include="Assets\Assets playground\Scripts\SimpleSampleCharacterControl.cs" />
      <Compile Include="Assets\Assets playground\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\XRDirectClimbInteractor.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\MovableObsRight.cs" />
+     <Compile Include="Assets\Welcome.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\SavePos.cs" />
      <Compile Include="Assets\Scripts\InputReader.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\Pendulum.cs" />
@@ -88,16 +93,16 @@
      <Compile Include="Assets\Scripts\Jump.cs" />
      <Compile Include="Assets\Scripts\HandDirectInteractor.cs" />
      <Compile Include="Assets\Scripts\10 Buttons\SlidingDoor.cs" />
-     <Compile Include="Assets\Assets playground\OpeningWallRight.cs" />
      <Compile Include="Assets\Scripts\10 Buttons\VRButton.cs" />
      <Compile Include="Assets\Assets playground\Scripts\ScoringSystem.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\Rotator.cs" />
      <Compile Include="Assets\Assets playground\Scripts\Rotate.cs" />
      <Compile Include="Assets\Scripts\11 Wrist UI\ShotCounter.cs" />
      <Compile Include="Assets\Assets playground\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
+     <Compile Include="Assets\Scripts\Balancingbeam.cs" />
      <Compile Include="Assets\Assets playground\KnockerHammer.cs" />
+     <Compile Include="Assets\rotateX1.cs" />
      <Compile Include="Assets\Assets playground\Holdplayer2.cs" />
-     <Compile Include="Assets\Assets playground\OpeningWallLeft.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\Bounce.cs" />
      <Compile Include="Assets\Assets playground\ObstacleCoursePack\Scripts\FPSDisplay.cs" />
      <Compile Include="Assets\Assets playground\Scripts\FreeCameraLogic.cs" />
@@ -109,6 +114,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
      <None Include="Assets\Assets playground\Supercyan Character Pack Zombie Sample\Shaders\SupercyanShader.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -349,6 +355,9 @@
  </Reference>
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Valve.Newtonsoft.Json">
+ <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -701,6 +710,9 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.XR.OpenVR">
+ <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.XR.OpenVR.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -761,6 +773,9 @@
  <Reference Include="Unity.PlasticSCM.Editor">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.XR.OpenVR.Editor">
+ <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.XR.OpenVR.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.XR.CoreUtils.Editor">
  <HintPath>C:/Users/Administrator/Downloads/Moblima-Combined2/Library/ScriptAssemblies/Unity.XR.CoreUtils.Editor.dll</HintPath>
  </Reference>
@@ -814,6 +829,26 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{53202F9E-4E75-7682-684D-547928DEE382}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{6874E6E6-3C2D-40BE-1AA3-8E884EB10FD1}</Project>
+      <Name>SteamVR</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
+      <Project>{A8C576E9-6082-97C3-604E-23AD33AB109D}</Project>
+      <Name>SteamVR_Windows_EditorHelper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{84DD2E17-1C9C-05C7-6D36-01DC8B9F5B4E}</Project>
+      <Name>SteamVR_Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

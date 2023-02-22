@@ -66,10 +66,5 @@ public class ClosingWallRight : MonoBehaviour
 		}
 		
     }
-	void OnTriggerExit(Collider col){
-		if(col.tag=="Player"){
 
-			transform.position = startPos;
-		}
-	}
 }
