@@ -38,7 +38,7 @@
 
 #### Multiple Paths
 
-<img src="/Assets/images/multiplepath.png" width="500px">
+<img src="/Assets/images/multiplepath.jpeg" width="500px">
 
 ## 📽️ Demo Video
 [Click Here](https://youtu.be/XFsw6Aknp70)
